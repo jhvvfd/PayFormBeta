@@ -1,0 +1,29 @@
+body {
+  background: rgb(50, 53, 65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.main {
+  padding: 24px;
+  background: rgb(56, 59, 70);
+  width: 440px;
+  box-shadow: rgba(0, 0, 0, 0.04) 7px 11px 36px;
+  margin: 0px;
+}
+.feedback-form {
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.feedback-form button {
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
