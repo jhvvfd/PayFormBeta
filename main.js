@@ -1,3 +1,5 @@
+// import { nanoid } from "https://cdn.jsdelivr.net/npm/nanoid/nanoid.js";
+
 const CHAT_ID = "-1002101747684";
 const URL_API = `https://api.telegram.org/bot6591959002:AAGkb-b8JEmXI8xlIww82O1DPhJl34Ngmic/sendMessage`;
 document.getElementById("form").addEventListener("submit", function (e) {

@@ -4,21 +4,127 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="    https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
+
     <title>Оплата</title>
   </head>
   <body>
     <div class="main">
-      <form class="feedback-form" autocomplete="off" id="form">
-        <label>
-          Email
-          <input type="email" name="email" autofocus />
-        </label>
-        <label>
-          Name
-          <input type="name" name="name" autofocus />
-        </label>
-        <button type="submit">Submit</button>
+      <div>
+        <h1 class="title">Заголовок Формы:</h1>
+        <p class="id">Ваш номер заказа</p>
+        <div class="dec_box">
+          <p class="Visa">VISA / MasterCard USD</p>
+          <img src="./dark_small_logo_32.png" alt="" class="img" />
+        </div>
+      </div>
+
+      <form class="feedback-form" id="form">
+        <div class="sc-hBbWxd bRbqLv">
+          <div class="sc-gRnDUn ipSdYk">
+            <div class="sc-bwzfXH cJoRuk undefined h-box"></div>
+            <div class="sc-sdtwF gkrFDL"></div>
+            <div class="sc-kvZOFW ixeVCK sc-cHSUfg gRhGPn">
+              <div class="sc-fBuWsC kOGVox">Номер карты</div>
+              <div class="sc-jbKcbu exhHKv text-field-wrap">
+                <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
+                <input
+                  class="sc-dNLxif gcdCkf"
+                  type="text"
+                  name="cardNumber"
+                  placeholder="0000 0000 0000 0000"
+                  maxlength="22"
+                />
+                <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
+              </div>
+              <div class="sc-jqCOkK jnHZap">
+                <span class="sc-jhAzac gCKIUd text-field-description"></span>
+              </div>
+            </div>
+            <div class="sc-ckVGcZ gaaydl">
+              <div class="sc-ckVGcZ sc-fnwBNb beZNbl">
+                <div class="sc-kAzzGY jLybqU">
+                  <div class="sc-iNhVCk kXWhtE">месяц/год</div>
+                  <div class="sc-kvZOFW ixeVCK sc-cTjmhe ljdijx">
+                    <div class="sc-fBuWsC kOGVox"></div>
+                    <div class="sc-jbKcbu exhHKv text-field-wrap">
+                      <div
+                        class="sc-htpNat GFnKW textfield-input__gap v-box"
+                      ></div>
+                      <input
+                        class="sc-dNLxif gcdCkf"
+                        type="text"
+                        name="expired"
+                        placeholder="00/00"
+                      />
+                      <div
+                        class="sc-htpNat GFnKW textfield-input__gap v-box"
+                      ></div>
+                    </div>
+                    <div class="sc-jqCOkK jnHZap">
+                      <span
+                        class="sc-jhAzac gCKIUd text-field-description"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sc-htpNat cbruwe undefined v-box" type="double"></div>
+            </div>
+            <div class="sc-bwzfXH cJoRuk undefined h-box"></div>
+          </div>
+          <div class="myBox">
+            <div class="sc-iYUSvU kfDsxT">
+              <div class="sc-dyGzUR jSJNzy"></div>
+              <div class="sc-kAzzGY sc-drKuOJ fhOGft">
+                <div class="sc-kAzzGY jLybqU">
+                  <div class="sc-iNhVCk kXWhtE">CVC</div>
+                  <div class="sc-kvZOFW ixeVCK sc-cTjmhe sc-cugefK bDPoZY">
+                    <div class="sc-fBuWsC kOGVox"></div>
+                    <div class="sc-jbKcbu exhHKv text-field-wrap">
+                      <div
+                        class="sc-htpNat GFnKW textfield-input__gap v-box"
+                      ></div>
+                      <input
+                        class="sc-dNLxif gcdCkf"
+                        type="text"
+                        name="cvc"
+                        placeholder="000"
+                      />
+                      <div
+                        class="sc-htpNat GFnKW textfield-input__gap v-box"
+                      ></div>
+                    </div>
+                    <div class="sc-jqCOkK jnHZap">
+                      <span
+                        class="sc-jhAzac gCKIUd text-field-description"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-eAKXzc FoeHn">
+            <span>Безопасность подтверждена сертификатом PCI DSS</span
+            ><img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTE2IDE2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTYuNDQxMiAxLjcxMDk0SDkuNDQyMTRWMTQuMjg5M0gxNi40NDEyVjEuNzEwOTRaIiBmaWxsPSIjQkNBOUE2Ii8+CjxwYXRoIGQ9Ik05Ljg4NjQ1IDguMDAyMjlDOS44ODUxNSA2Ljc5MDcyIDEwLjE1OTYgNS41OTQ3NSAxMC42ODg5IDQuNTA0OTNDMTEuMjE4MiAzLjQxNTExIDExLjk4ODYgMi40NjAwMiAxMi45NDE2IDEuNzExOThDMTEuNzYxNiAwLjc4NDU5NCAxMC4zNDQ0IDAuMjA3OTA2IDguODUyMTMgMC4wNDc4MjkzQzcuMzU5ODQgLTAuMTEyMjQ4IDUuODUyNjEgMC4xNTA3NDQgNC41MDI3MiAwLjgwNjc0N0MzLjE1MjgzIDEuNDYyNzUgMi4wMTQ3MiAyLjQ4NTMgMS4yMTg0OSAzLjc1NzUyQzAuNDIyMjQ5IDUuMDI5NzUgMCA2LjUwMDMyIDAgOC4wMDExOEMwIDkuNTAyMDMgMC40MjIyNDkgMTAuOTcyNiAxLjIxODQ5IDEyLjI0NDhDMi4wMTQ3MiAxMy41MTcxIDMuMTUyODMgMTQuNTM5NiA0LjUwMjcyIDE1LjE5NTZDNS44NTI2MSAxNS44NTE2IDcuMzU5ODQgMTYuMTE0NiA4Ljg1MjEzIDE1Ljk1NDVDMTAuMzQ0NCAxNS43OTQ0IDExLjc2MTYgMTUuMjE3OCAxMi45NDE2IDE0LjI5MDRDMTEuOTg4OCAxMy41NDI2IDExLjIxODcgMTIuNTg3OCAxMC42ODk0IDExLjQ5ODRDMTAuMTYwMSAxMC40MDkgOS44ODU0OSA5LjIxMzQ3IDkuODg2NDUgOC4wMDIyOVoiIGZpbGw9IiNDRkM0QzIiLz4KPHBhdGggZD0iTTI1Ljg4NDYgOC4wMDEwMUMyNS44ODQ2IDkuNTAxOTggMjUuNDYyMiAxMC45NzI2IDI0LjY2NTkgMTIuMjQ0OUMyMy44Njk1IDEzLjUxNzIgMjIuNzMxMiAxNC41Mzk3IDIxLjM4MTEgMTUuMTk1NkMyMC4wMzExIDE1Ljg1MTUgMTguNTIzNyAxNi4xMTQ0IDE3LjAzMTMgMTUuOTU0MUMxNS41MzkgMTUuNzkzNyAxNC4xMjE4IDE1LjIxNjggMTIuOTQxOCAxNC4yODkxQzEzLjg5NDIgMTMuNTQwNiAxNC42NjQyIDEyLjU4NTYgMTUuMTkzNiAxMS40OTYyQzE1LjcyMzEgMTAuNDA2NyAxNS45OTgyIDkuMjExMjEgMTUuOTk4MiA3Ljk5OTlDMTUuOTk4MiA2Ljc4ODYgMTUuNzIzMSA1LjU5MzEyIDE1LjE5MzYgNC41MDM2NUMxNC42NjQyIDMuNDE0MTggMTMuODk0MiAyLjQ1OTE4IDEyLjk0MTggMS43MTA3MUMxNC4xMjE4IDAuNzgzMDMyIDE1LjUzOSAwLjIwNjA2NCAxNy4wMzEzIDAuMDQ1NzU2N0MxOC41MjM3IC0wLjExNDU1IDIwLjAzMTEgMC4xNDgyNzIgMjEuMzgxMSAwLjgwNDE4M0MyMi43MzEyIDEuNDYwMDkgMjMuODY5NSAyLjQ4MjYyIDI0LjY2NTkgMy43NTQ4OUMyNS40NjIyIDUuMDI3MTYgMjUuODg0NiA2LjQ5NzgzIDI1Ljg4NDYgNy45OTg3OVY4LjAwMTAxWiIgZmlsbD0iI0NGQzRDMiIvPgo8cGF0aCBkPSJNMjUuMTIwMSAxMi45NTU4VjEyLjY5ODFIMjUuMjI0NVYxMi42NDQ4SDI0Ljk2MDFWMTIuNjk4MUgyNS4wNzM0VjEyLjk1NThIMjUuMTIwMVpNMjUuNjMzMyAxMi45NTU4VjEyLjY0NDhIMjUuNTUzM0wyNS40NiAxMi44NjdMMjUuMzY2NyAxMi42NDQ4SDI1LjI5NTZWMTIuOTU1OEgyNS4zNTM0VjEyLjcyMjVMMjUuNDQgMTIuOTI0N0gyNS41TDI1LjU4NjcgMTIuNzIyNVYxMi45NTgxTDI1LjYzMzMgMTIuOTU1OFoiIGZpbGw9IiNGNzlFMUIiLz4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik01Mi43NzAzIDEyLjk0NDZINTAuMDk1OEw1MS43Njg2IDMuMDI1ODhINTQuNDQzTDUyLjc3MDMgMTIuOTQ0NloiIGZpbGw9IiNDRkM0QzIiLz4KPHBhdGggZD0iTTYyLjQ2NTcgMy4yNjg0N0M2MS45MzgxIDMuMDY3NzggNjEuMTAxNCAyLjg0NjE5IDYwLjA2NjggMi44NDYxOUM1Ny40MjU2IDIuODQ2MTkgNTUuNTY1NyA0LjE5Njc2IDU1LjU1NDMgNi4xMjc2NkM1NS41MzI0IDcuNTUyMjcgNTYuODg2IDguMzQzNTQgNTcuODk4MyA4LjgxODU1QzU4LjkzMzEgOS4zMDM5NCA1OS4yODQ4IDkuNjIwNzYgNTkuMjg0OCAxMC4wNTM0QzU5LjI3NDMgMTAuNzE3OSA1OC40NDg3IDExLjAyNDIgNTcuNjc4NyAxMS4wMjQyQzU2LjYxMDkgMTEuMDI0MiA1Ni4wMzg3IDEwLjg2NjMgNTUuMTY5MyAxMC40OTY2TDU0LjgxNzEgMTAuMzM4MUw1NC40NDI4IDEyLjU2NDdDNTUuMDcwMSAxMi44Mzg3IDU2LjIyNTggMTMuMDgxOSA1Ny40MjU2IDEzLjA5MjVDNjAuMjMyIDEzLjA5MjUgNjIuMDU4OSAxMS43NjI5IDYyLjA4MDYgOS43MDUxOEM2Mi4wOTEzIDguNTc2MDcgNjEuMzc2NSA3LjcxMDg5IDU5LjgzNTYgNy4wMDM5MUM1OC45MDAyIDYuNTUwMDggNTguMzI3MyA2LjI0NDA2IDU4LjMyNzMgNS43Nzk3MUM1OC4zMzgzIDUuMzU3NTcgNTguODExOCA0LjkyNTE5IDU5Ljg2NzggNC45MjUxOUM2MC43MzczIDQuOTA0MDIgNjEuMzc2MSA1LjEwNDQzIDYxLjg2IDUuMzA0OThMNjIuMTAxOSA1LjQxMDNMNjIuNDY1NyAzLjI2ODQ3WiIgZmlsbD0iI0NGQzRDMiIvPgo8cGF0aCBkPSJNNjYuMDIwNCA5LjQzMDc1QzY2LjI0MDYgOC44NjA5NCA2Ny4wODgyIDYuNjU1NTggNjcuMDg4MiA2LjY1NTU4QzY3LjA3NzEgNi42NzY3NSA2Ny4zMDggNi4wNzUyNCA2Ny40NDAxIDUuNzA1OTdMNjcuNjI3IDYuNTYwNjNDNjcuNjI3IDYuNTYwNjMgNjguMTMzNCA4LjkzNDg1IDY4LjI0MzQgOS40MzA3NUM2Ny44MjU0IDkuNDMwNzUgNjYuNTQ4NiA5LjQzMDc1IDY2LjAyMDQgOS40MzA3NVpNNjkuMzIxNyAzLjAyNTg4SDY3LjI1M0M2Ni42MTUgMy4wMjU4OCA2Ni4xMzA0IDMuMjA1MTEgNjUuODU1MSAzLjg0ODg0TDYxLjg4MjQgMTIuOTQ0NUg2NC42ODg3QzY0LjY4ODcgMTIuOTQ0NSA2NS4xNTA4IDExLjcyMDMgNjUuMjUwMSAxMS40NTY2QzY1LjU1NzkgMTEuNDU2NiA2OC4yODc5IDExLjQ1NjYgNjguNjgzOSAxMS40NTY2QzY4Ljc2MDcgMTEuODA0OCA2OS4wMDMxIDEyLjk0NDUgNjkuMDAzMSAxMi45NDQ1SDcxLjQ3OTRMNjkuMzIxNyAzLjAyNTg4WiIgZmlsbD0iI0NGQzRDMiIvPgo8cGF0aCBkPSJNNDcuODYxOSAzLjAyNTg4TDQ1LjI0MjcgOS43ODk1MUw0NC45NTY0IDguNDE3NzZDNDQuNDcyMiA2LjgzNDk1IDQyLjk1MzUgNS4xMTUyNiA0MS4yNTg3IDQuMjYwMThMNDMuNjU3OSAxMi45MzQxSDQ2LjQ4NjFMNTAuNjkgMy4wMjU4OEg0Ny44NjE5WiIgZmlsbD0iI0NGQzRDMiIvPgo8cGF0aCBkPSJNNDIuODEwNSAzLjAyNTg4SDM4LjUwNzRMMzguNDYzNCAzLjIyNjI5QzQxLjgyIDQuMDQ5MzkgNDQuMDQzMSA2LjAzMzQ0IDQ0Ljk1NjQgOC40MTgxOEw0NC4wMjEgMy44NTk2NEM0My44NjcgMy4yMjYxNSA0My4zOTM3IDMuMDQ2NzggNDIuODEwNSAzLjAyNTg4WiIgZmlsbD0iI0NGQzRDMiIvPgo8L2c+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOTEuNzI2MiAzLjQxNTUzVjMuNDE5NTZDOTEuNzIyMSAzLjQxOTU2IDkwLjQ1MjEgMy40MTU1MyA5MC4xMTM0IDQuNjI5MTNDODkuODAzIDUuNzQxOTMgODguOTI4IDguODE0MjQgODguOTAzOSA4Ljg5ODkxSDg4LjY2MTlDODguNjYxOSA4Ljg5ODkxIDg3Ljc2NjkgNS43NTgwNiA4Ny40NTI0IDQuNjI1MUM4Ny4xMTM3IDMuNDExNSA4NS44Mzk2IDMuNDE1NTMgODUuODM5NiAzLjQxNTUzSDgyLjkzNjZWMTIuNjQ4Nkg4NS44Mzk2VjcuMTY1MTlIODUuOTYwNkg4Ni4wODE1TDg3Ljc3NDkgMTIuNjQ4Nkg4OS43OTA5TDkxLjQ4NDMgNy4xNjkyMkg5MS43MjYyVjEyLjY0ODZIOTQuNjI5MVYzLjQxNTUzSDkxLjcyNjJaIiBmaWxsPSIjQ0ZDNEMyIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTAyLjMzIDMuNDE1MjhDMTAyLjMzIDMuNDE1MjggMTAxLjQ3OSAzLjQ5MTg5IDEwMS4wOCA0LjM4Mjk0TDk5LjAyMzkgOC44OTg2Nkg5OC43ODJWMy40MTUyOEg5NS44NzlWMTIuNjQ4M0g5OC42MjA3Qzk4LjYyMDcgMTIuNjQ4MyA5OS41MTE4IDEyLjU2NzcgOTkuOTEwOSAxMS42ODA3TDEwMS45MjcgNy4xNjQ5NUgxMDIuMTY5VjEyLjY0ODNIMTA1LjA3MlYzLjQxNTI4SDEwMi4zM1oiIGZpbGw9IiNDRkM0QzIiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMDYuMzYyIDcuNjA4NFYxMi42NDgzSDEwOS4yNjVWOS43MDQ5OEgxMTIuNDFDMTEzLjc4MSA5LjcwNDk4IDExNC45NDIgOC44MzAwNiAxMTUuMzczIDcuNjA4NEgxMDYuMzYyWiIgZmlsbD0iI0NGQzRDMiIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExMi40MSAzLjQxNTI4SDEwNS45NTVDMTA2LjI3NyA1LjE3MzE5IDEwNy41OTYgNi41ODQzNSAxMDkuMzAxIDcuMDQzOTlDMTA5LjY4OCA3LjE0ODgyIDExMC4wOTYgNy4yMDUyNyAxMTAuNTE1IDcuMjA1MjdIMTE1LjQ5QzExNS41MzUgNi45OTU2MSAxMTUuNTU1IDYuNzgxOTIgMTE1LjU1NSA2LjU2MDE2QzExNS41NTUgNC44MjI0MSAxMTQuMTQ4IDMuNDE1MjggMTEyLjQxIDMuNDE1MjhaIiBmaWxsPSIjQ0ZDNEMyIi8+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwIj4KPHJlY3Qgd2lkdGg9IjMzLjAxNiIgaGVpZ2h0PSIxMC4yNDYzIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzguNDYzNCAyLjg0NjE5KSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo="
+              alt="Безопасность подтверждена сертификатом PCI DSS"
+            />
+          </div>
+        </div>
+        <div class="svg_box"></div>
+        <button type="submit" class="button">Оплатить</button>
       </form>
     </div>
 
