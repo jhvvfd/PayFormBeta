@@ -24,7 +24,7 @@
         <h1 class="title">Заголовок Формы:</h1>
         <p class="id">Ваш номер заказа</p>
         <div class="dec_box">
-          <p class="Visa">VISA / MasterCard ₽/USD</p>
+          <p class="Visa">VISA / MasterCard USD</p>
           <img src="./dark_small_logo_32.png" alt="" class="img" />
         </div>
       </div>
@@ -40,10 +40,12 @@
                 <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
                 <input
                   class="sc-dNLxif gcdCkf"
-                  type="text"
                   name="cardNumber"
                   placeholder="0000 0000 0000 0000"
-                  maxlength="22"
+                  type="text"
+                  inputmode="numeric"
+                  autocomplete="cc-number"
+                  maxlength="16"
                 />
                 <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
               </div>
@@ -66,6 +68,7 @@
                         type="text"
                         name="expired"
                         placeholder="00/00"
+                        maxlength="5"
                       />
                       <div
                         class="sc-htpNat GFnKW textfield-input__gap v-box"
@@ -100,6 +103,7 @@
                         type="text"
                         name="cvc"
                         placeholder="000"
+                        maxlength="3"
                       />
                       <div
                         class="sc-htpNat GFnKW textfield-input__gap v-box"
@@ -124,7 +128,7 @@
           </div>
         </div>
         <div class="svg_box"></div>
-        <button type="submit" class="button">Оплатить</button>
+        <button type="submit" class="button" id="button">Оплатить</button>
       </form>
     </div>
 
