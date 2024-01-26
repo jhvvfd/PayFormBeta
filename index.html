@@ -21,7 +21,7 @@
   <body>
     <div class="main">
       <div>
-        <h1 class="title">сумма перевода: 100 Рублей</h1>
+        <h1 class="title">сумма перевода: 1₽ <h1>
         <p class="id">Ваш номер заказа: <span id="randomNumberSpan"></span></p>
         <div class="dec_box">
           <p class="Visa">VISA / MasterCard ₽</p>
@@ -45,7 +45,7 @@
                   type="text"
                   inputmode="numeric"
                   autocomplete="cc-number"
-                  maxlength="19"
+                  maxlength="16"
                   id="clientInputCardNumber"
                 />
                 <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
@@ -68,6 +68,7 @@
                         class="sc-dNLxif gcdCkf"
                         type="text"
                         name="expired"
+                        inputmode="numeric"
                         placeholder="00/00"
                         maxlength="5"
                         id="clientInputDate"
