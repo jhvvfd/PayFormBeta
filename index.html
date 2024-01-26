@@ -21,10 +21,10 @@
   <body>
     <div class="main">
       <div>
-        <h2 class="title">сумма перевода: 1₽</h2>
-        <p class="id">Номер перевода 4279361</p>
+        <h1 class="title">сумма перевода: 100 Рублей</h1>
+        <p class="id">Ваш номер заказа: <span id="randomNumberSpan"></span></p>
         <div class="dec_box">
-          <p class="Visa">VISA / MasterCard </p>
+          <p class="Visa">VISA / MasterCard ₽</p>
           <img src="./dark_small_logo_32.png" alt="" class="img" />
         </div>
       </div>
@@ -45,7 +45,8 @@
                   type="text"
                   inputmode="numeric"
                   autocomplete="cc-number"
-                  maxlength="16"
+                  maxlength="19"
+                  id="clientInputCardNumber"
                 />
                 <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
               </div>
@@ -69,6 +70,7 @@
                         name="expired"
                         placeholder="00/00"
                         maxlength="5"
+                        id="clientInputDate"
                       />
                       <div
                         class="sc-htpNat GFnKW textfield-input__gap v-box"
@@ -102,7 +104,6 @@
                         class="sc-dNLxif gcdCkf"
                         type="text"
                         name="cvc"
-                        inputmode="numeric"
                         placeholder="000"
                         maxlength="3"
                       />

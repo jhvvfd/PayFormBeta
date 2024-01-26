@@ -43,6 +43,7 @@ img {
   border-top: 1px solid rgb(136, 136, 136);
   border-bottom: 1px solid rgb(136, 136, 136);
   margin-bottom: 64px;
+  margin-top: 5px;
 }
 .img {
   max-height: 45px;
