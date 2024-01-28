@@ -1,8 +1,15 @@
+@font-face {
+  font-family: MyCustomFont;
+  src: url("./fonts/IntroDemo-BlackCAPS.otf");
+}
+body {
+  font-family: MyCustomFont, Arial, sans-serif;
+}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif !important;
+  font-family: MyCustomFont, Arial, sans-serif !important;
   color: rgb(245, 245, 245);
 }
 body {
@@ -164,7 +171,7 @@ img {
 .bRbqLv input {
   height: 24px;
   font-size: 14px;
-  font-family: OCRAStd, serif !important;
+  font-family: OCRAStd, serif;
 }
 
 .gcdCkf {
@@ -246,7 +253,7 @@ img {
 .bRbqLv input {
   height: 24px;
   font-size: 14px;
-  font-family: OCRAStd, serif !important;
+  font-family: OCRAStd, serif;
 }
 
 .gcdCkf {
@@ -377,7 +384,7 @@ img {
 .bRbqLv input {
   height: 24px;
   font-size: 14px;
-  font-family: OCRAStd, serif !important;
+  font-family: OCRAStd, serif;
 }
 
 .gcdCkf {
